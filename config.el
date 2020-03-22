@@ -22,6 +22,9 @@
 (after! smartparens
   (smartparens-global-mode -1))
 
+(use-package! dash-at-point
+  :bind ("C-c g g" . dash-at-point-with-docset))
+
 (use-package! windmove
   :bind (("M-s-<left>" . windmove-left)
          ("M-s-<right>" . windmove-right)
