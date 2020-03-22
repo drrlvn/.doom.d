@@ -16,6 +16,9 @@
 (after! doom-modeline
   (setq doom-modeline-major-mode-icon t))
 
+(after! magit
+  (setf (alist-get 'unpushed magit-section-initial-visibility-alist) 'show))
+
 (after! smartparens
   (smartparens-global-mode -1))
 
